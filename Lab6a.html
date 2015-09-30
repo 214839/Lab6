@@ -1,6 +1,6 @@
 <html>
 <head>
-<title> Lab 6 </title>
+<title> Lab 6a </title>
 <script src="Scripts/processing.js"></script>
 <script type="text/processing" data-processing-target="mycanvas">
 
@@ -10,25 +10,22 @@ size( 500, 500 );
 background(0,0,0);
 frameRate( 30 );
 
-
-
 }
 
 
 void draw()
 {
-	background(0,0,0);
+		background(0,0,0);
 	
 	fill(255,255,255);
 	rect(50,50,150,50);
-
+	
 	text(mouseX,25,25);
 	text(mouseY,50,25);
 	
 	fill(0,0,0);
 	textSize(40);
-	text("Lab 6a",63,90);
-
+	text("Lab 6b",63,90);
 	fill(255,255,255);
 	textSize(30);
 	text("Click the Button to go to the file.",33,390);
@@ -37,10 +34,11 @@ void draw()
 	{
 		if(mouseX > 50 && mouseX < 200 && mouseY > 50 && mouseY < 100)
 		{
-			link("Lab6a.html");
+			link("Lab6b.html");
 		}
 		
-	}		
+	}	
+	
 
 }
 
@@ -52,4 +50,3 @@ void draw()
 
 </body>
 </html>
-
