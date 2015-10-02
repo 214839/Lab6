@@ -20,21 +20,28 @@ void draw()
 	fill(255,255,255);
 	rect(50,50,150,50);
 	
-	text(mouseX,25,25);
-	text(mouseY,50,25);
+	fill(255,255,255);
+	rect(50,150,150,50);
 	
 	fill(0,0,0);
 	textSize(40);
 	text("Lab 6b",63,90);
+	text("Lab 6c",63,190);
 	fill(255,255,255);
 	textSize(30);
 	text("Click the Button to go to the file.",33,390);
+	text("Welcome to Lab 6a !!!",33,450);
 	
 	if(mousePressed == true && mouseButton == LEFT)
 	{
 		if(mouseX > 50 && mouseX < 200 && mouseY > 50 && mouseY < 100)
 		{
 			link("Lab6b.html");
+		}
+		
+		if(mouseX > 50 && mouseX < 200 && mouseY > 150 && mouseY < 200)
+		{
+			link("Lab6c.html");
 		}
 		
 	}	
